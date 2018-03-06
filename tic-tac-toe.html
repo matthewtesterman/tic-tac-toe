@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe Demo</title>
+
+  <!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style media="screen">
+  body {
+    background-color: #25292F;
+  }
+  </style>
+</head>
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" width="300.36" height="300" viewBox="0 0 300.36 300"><defs>
+    <style>
+    .cls-1{fill:#009A97;}
+    .cls-2,.cls-3{fill:none;stroke-miterlimit:10;stroke-width:18px;}
+    .cls-2{stroke:#F46262;}
+    .cls-3{stroke:#34FFC2;}
+    </style>
+  </defs><title>TIC-TAC-TOE_1</title>
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="Layer_1-2" data-name="Layer 1">
+        <rect class="cls-1" x="95" width="13" height="300" rx="6.5" ry="6.5"/>
+        <rect class="cls-1" x="195" width="13" height="300" rx="6.5" ry="6.5"/>
+        <rect class="cls-1" x="143.5" y="-49.5" width="13" height="300" rx="6.5" ry="6.5" transform="translate(49.5 250.5) rotate(-90)"/>
+        <rect class="cls-1" x="143.5" y="50.5" width="13" height="300" rx="6.5" ry="6.5" transform="translate(-50.5 350.5) rotate(-90)"/>
+        <circle id="o01" style="display: none;" class="cls-2" cx="150" cy="46" r="32"/>
+        <circle id="o02" style="display: none;" class="cls-2" cx="253" cy="46" r="32"/>
+        <circle id="o00"  style="display: none;" class="cls-2" cx="50" cy="46" r="32"/>
+        <circle id="o11"  style="display: none;" class="cls-2" cx="152" cy="151" r="32"/>
+        <circle id="o12"  style="display: none;" class="cls-2" cx="253" cy="151" r="32"/>
+        <circle id="o22"  style="display: none;" class="cls-2" cx="253" cy="251" r="32"/>
+        <circle id="o21"  style="display: none;" class="cls-2" cx="152" cy="251" r="32"/>
+        <circle id="o10"  style="display: none;" class="cls-2" cx="50" cy="151" r="32"/>
+        <circle id="o20"  style="display: none;" class="cls-2" cx="50" cy="251" r="32"/>
+        <g id="x02" class="square" style="display: none;">
+          <line class="cls-3" x1="216" y1="7" x2="294" y2="85"/>
+          <line class="cls-3" x1="294" y1="7" x2="216" y2="85"/>
+        </g>
+        <g id="x12" class="square"  style="display: none;">
+          <line class="cls-3" x1="214" y1="111" x2="292" y2="189"/>
+          <line class="cls-3" x1="292" y1="111" x2="214" y2="189"/>
+        </g>
+        <g id="x11" style="display: none;">
+          <line class="cls-3" x1="113" y1="111" x2="191" y2="189"/>
+          <line class="cls-3" x1="191" y1="111" x2="113" y2="189"/>
+        </g>
+        <g id="x01" style="display: none;">
+          <line class="cls-3" x1="113" y1="7" x2="191" y2="85"/>
+          <line class="cls-3" x1="191" y1="7" x2="113" y2="85"/>
+        </g>
+        <g id="x22" style="display: none;">
+          <line class="cls-3" x1="214" y1="214" x2="292" y2="292"/>
+          <line class="cls-3" x1="292" y1="214" x2="214" y2="292"/>
+        </g>
+        <g id="x21" style="display: none;">
+          <line class="cls-3" x1="113" y1="213" x2="191" y2="291"/>
+          <line class="cls-3" x1="191" y1="213" x2="113" y2="291"/>
+        </g>
+        <g id="x00" style="display: none;">
+          <line class="cls-3" x1="9" y1="7" x2="87" y2="85"/>
+          <line class="cls-3" x1="87" y1="7" x2="9" y2="85"/>
+        </g>
+        <g id="x10" style="display: none;">
+          <line class="cls-3" x1="9" y1="111" x2="87" y2="189"/>
+          <line class="cls-3" x1="87" y1="111" x2="9" y2="189"/>
+        </g>
+        <g id="x20" style="display: none;">
+          <line class="cls-3" x1="9" y1="214" x2="87" y2="292"/>
+          <line class="cls-3" x1="87" y1="214" x2="9" y2="292"/>
+        </g>
+        <path id="_10" class="square" data-name="10" class="cls-4" style="opacity: 0.0;" d="M6.5,194H95V107H6.5A6.52,6.52,0,0,1,0,100.5v100A6.52,6.52,0,0,1,6.5,194Z"/>
+        <path id="_20" class="square" data-name="20" class="cls-4" style="opacity: 0.0;" d="M95,293.5V207H6.5A6.52,6.52,0,0,1,0,200.5V300H101.5A6.52,6.52,0,0,1,95,293.5Z"/>
+        <path id="_01" class="square" data-name="01" class="cls-4" style="opacity: 0.0;" d="M108,6.5V94h87V6.5A6.52,6.52,0,0,1,201.5,0h-100A6.52,6.52,0,0,1,108,6.5Z"/>
+        <path id="_21" class="square" data-name="21" class="cls-4" style="opacity: 0.0;" d="M195,293.5V207H108v86.5a6.52,6.52,0,0,1-6.5,6.5h100A6.52,6.52,0,0,1,195,293.5Z"/>
+        <path id="_00" class="square" data-name="00" class="cls-4" style="opacity: 0.0;" d="M6.5,94H95V6.5A6.52,6.52,0,0,1,101.5,0H0V100.5A6.52,6.52,0,0,1,6.5,94Z"/>
+        <path id="_22" class="square" data-name="22" class="cls-4" style="opacity: 0.0;" d="M293.5,207H208v86.5a6.52,6.52,0,0,1-6.5,6.5H300V200.5A6.52,6.52,0,0,1,293.5,207Z"/>
+        <path id="_12" class="square" data-name="12" class="cls-4" style="opacity: 0.0;" d="M293.5,107H208v87h85.5a6.52,6.52,0,0,1,6.5,6.5v-100A6.52,6.52,0,0,1,293.5,107Z"/>
+        <path id="_02" class="square" data-name="02" class="cls-4" style="opacity: 0.0;" d="M201.5,0A6.52,6.52,0,0,1,208,6.5V94h85.5a6.52,6.52,0,0,1,6.5,6.5V0Z"/>
+        <rect id="_11" class="square" data-name="11" class="cls-4" style="opacity: 0.0;" x="108" y="107" width="87" height="87"/>
+        </g>
+        </g>
+        </svg>
+        <div class="modal fade" id="winnerModal" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h1 id="winnerVal" class="text-center"> Wins!</h1>
+                <div class="form-group text-center">
+                  <button id="btnRestart" type="button" class="btn btn-primary input-lg" style="margin-top: 25px;" data-dismiss="modal"><i class="fa fa-refresh" aria-hidden="true"></i> Restart Game</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script src="js/tic-tac-toe.js"></script>
+
+      </body>
+      </html>
